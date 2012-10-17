@@ -17,7 +17,17 @@ public class BlockListener implements Listener{
 		Block block = event.getBlockPlaced();
 		
 		if(block.getTypeId() == SectPro.itemId[0] && block.getData() == SectPro.itemId[1]) {
+			
 			//Block is the type specified in the config!
+			
+			if(!SectPro.sneakOverride || !player.isSneaking()) {
+				
+				//Sneak overide is not enabled or the player is sneaking
+				
+				//TODO Find boundaries!
+				
+			}
+			
 		}
 		
 	}
