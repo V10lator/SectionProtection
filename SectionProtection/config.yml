@@ -2,3 +2,6 @@
 
 #Block id - The block that can be used to make a border - Format ID/DataValue
 Block-ID: 35/14
+
+#Sneak Override - When the player sneaks, boundary making is ignored
+Sneak-Override: true
