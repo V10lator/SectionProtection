@@ -35,16 +35,6 @@ public class SectPro extends JavaPlugin{
 		getConfigValues();
 		
 		serv.getPluginManager().registerEvents(new BlockListener(), this);
-		
-		serv.getLogger().info(getName()+" version "+pdf.getVersion()+" has been enabled!");
-		
-	}
-	
-	@Override
-	public void onDisable() {
-		
-		serv.getLogger().info(getName()+" version "+pdf.getVersion()+" has been disabled!");
-		
 	}
 	
 	/** Makes the config
