@@ -10,7 +10,7 @@ import com.puffybugs.SectPro.Listeners.BlockListener;
 public class SectPro extends JavaPlugin{
 	
 	//Config Values
-	public Integer[] itemId;
+	public final int[] itemId = new int[2];
 	public boolean sneakOverride;
 	
 	@Override
