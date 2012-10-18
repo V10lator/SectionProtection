@@ -10,17 +10,24 @@ import com.puffybugs.SectPro.SectPro;
 
 public class BlockListener implements Listener{
 	
+	private final SectPro plugin;
+	
+	public BlockListener(SectPro plugin)
+	{
+		this.plugin = plugin;
+	}
+	
 	@EventHandler
 	public void onBlockPlace(BlockPlaceEvent event) {
 		
 		Player player = event.getPlayer();
 		Block block = event.getBlockPlaced();
 		
-		if(block.getTypeId() == SectPro.itemId[0] && block.getData() == SectPro.itemId[1]) {
+		if(block.getTypeId() == plugin.itemId[0] && block.getData() == plugin.itemId[1]) {
 			
 			//Block is the type specified in the config!
 			
-			if(!SectPro.sneakOverride || !player.isSneaking()) {
+			if(!plugin.sneakOverride || !player.isSneaking()) {
 				
 				//Sneak overide is not enabled or the player is sneaking
 				
